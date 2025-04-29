@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Box, Typography, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Image from 'next/image';
+import Image from 'next/image'; // önemli
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store'; // RootState'i doğru yoldan import edin
 
@@ -33,8 +33,9 @@ const Packets = () => {
     const [value, setValue] = useState(0);
 
     // Tab değiştiğinde çalışacak fonksiyon
-    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    const handleChange = (event: React.SyntheticEvent, newValue: number, x: any) => {
         setValue(newValue);
+        console.log(newValue);
     };
 
     // Çöp ikonu için kullanılan fonksiyon

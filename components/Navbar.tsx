@@ -66,6 +66,7 @@ const Navbar = ({ addbasket }: NavbarProps) => {
                         variant="h5"
                         sx={{ cursor: "pointer" }}
                         onClick={() => {
+                            // next/link componentini kullan
                             router.push("/custom-packet");
                         }}
                     >
